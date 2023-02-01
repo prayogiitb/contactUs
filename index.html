@@ -4,193 +4,235 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
     <title>Contact us</title>
     <style>
         body
         {
             font-family: Mulish;
         }
-        .outer
+     button
         {
-            height: 850px;
-            min-width: 800px;
+           background-color: #F8BC28;
+           padding: 10px 60px;
+           border: 0;
+           outline: 0;
+           cursor: pointer;
+           font-size: 22px;
+           font-weight: 500;
+           border-radius: 30px;
         }
+     </style>
+     <body>
         
+        <h1 class="pt-5 text-center">Get in Touch</h1>
+        <h1 class="text-center pt-2">We'd <span style="color:red" >LOVE</span> to help you!</h1>
         
-        #btn
-        {
-            height: 40px;
-            width: 110px;
-            background-color: #F8BC28;
-            margin-left: 35px;
-        }
-        ::placeholder
-        {
-            font-family: Arial;
-        }
-        .feld
-        {
-            font-size: large;
-        }
-        h1
-        {
-            font-size: 3rem;
-        }
-        span
-        {
-            color: red;
-        }
+     
+     <center>
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email=""
+  action="" name="submit-to-google-sheet">
+    <div class="form-elements"><br>
+      <div style="background:none;border:2px solid black;border-radius: 30px;width: 1000px;padding-top: 15px;padding-bottom:
+       40px;padding-left: 20px;padding-right: 20px;"><br>
         
-    </style>
-</head>
-<body>
-    <div class="outer">
-        <h1><center>
-            Get in Touch
-        </center></h1>
-       
-        <h1><center>We'd <span>LOVE</span> to help you!</center></h1>
-        <div class="feld">
-            <center>
-            <form action="" style="margin-right: 10px; padding:10px;" name="submit-to-google-sheet">
-                <table>
-                    <tr>
-                        <td>Name:</td> 
-                        <td><input type="name" name="name" id="name" placeholder="Enter your name" style="margin: 10px; padding: 10px; width: 370px;" required >
-                        </tr>
-                    <tr>
-                        <td >E-mail:</td>
-                        <td><input type="email" name="email" id="email" placeholder="Enter your e-mail" style="margin: 10px; padding: 10px; width: 373px;" required></td>
+        <table>
+            <tr>
+                <td>Name:</td> 
+                <td><input type="name" name="name" id="name" placeholder="Enter your name" style="margin: 10px; padding: 10px; width: 370px;" required >
+                </tr>
+            <tr>
+                <td >E-mail:</td>
+                <td><input type="email" name="email" id="email" placeholder="Enter your e-mail" style="margin: 10px; padding: 10px; width: 373px;" required></td>
+            </tr>
+            <tr>
+                <td >Contact No:</td>
+                <td><input type="tel" name="phone" id="phone" placeholder="Enter your mobile no." style="margin: 10px; padding: 10px; width: 373px;" pattern="[0-9]{10}" required></td>
+            </tr>
+            <tr>
+                <td >Associated Organization: <br>(if applicable)</td>
+                <td><input type="name" name="organization" id="organization" placeholder="Organization name" style="margin: 10px; padding: 10px; width: 373px;" ></td>
+            </tr>
+            <tr>
+                <td>Designation/Occupation:</td> 
+                <td><input type="name" name="occupation" id="name" placeholder="Enter your occupation" style="margin: 10px; padding: 10px; width: 370px;" required>
+                </tr>
+            
+            <tr>
+                    <td>Village/locality/address:</td> 
+                    <td><textarea type="name" name="village" id="name" placeholder="Enter your address" style="margin: 10px; padding: 10px; width: 370px;" required></textarea>
                     </tr>
-                    <tr>
-                        <td >Contact No:</td>
-                        <td><input type="tel" name="phone" id="phone" placeholder="Enter your mobile no." style="margin: 10px; padding: 10px; width: 373px;" pattern="[0-9]{10}" required></td>
+            <tr>
+                    <td>Problem: <br>(Short description)</td> 
+                    <td><input type="name" name="problem" id="name" placeholder="Problem (in short)" style="margin: 10px; padding: 10px; width: 370px;" required></td>
                     </tr>
-                    <tr>
-                        <td >Associated Organization: <br>(if applicable)</td>
-                        <td><input type="name" name="org name" id="name" placeholder="Organization name" style="margin: 10px; padding: 10px; width: 373px;" ></td>
-                    </tr>
-                    <tr>
-                        <td>Designation/Occupation:</td> 
-                        <td><input type="name" name="occupation" id="name" placeholder="Enter your occupation" style="margin: 10px; padding: 10px; width: 370px;" required>
-                        </tr>
-                    
-                    <tr>
-                            <td>Village/locality/address:</td> 
-                            <td><textarea type="name" name="address" id="name" placeholder="Enter your address" style="margin: 10px; padding: 10px; width: 370px;" required></textarea>
-                            </tr>
-                    <tr>
-                            <td>Problem: <br>(Short description)</td> 
-                            <td><input type="name" name="description" id="name" placeholder="Problem (in short)" style="margin: 10px; padding: 10px; width: 370px;" required></td>
-                            </tr>
-                    <tr>
-                            <td>Sector of the problem: </td> 
-                            <td><select name="sector" id="sector" placeholder="Select option" style="margin: 10px; padding: 10px; width: 393px;" required>
-                                <option value="Select option">Select option</option>
-                                <option value="Health and nutrition">Health and nutrition</option>
-                                <option value="Livelihood">Livelihood</option>
-                                <option value="Water">Water</option>
-                                <option value="Energy">Energy</option>
-                                <option value="Agriculture">Agriculture</option>
-                                <option value="Education">Education</option>
-                                <option value="Social">Social</option>
-                                <option value="solid waste">solid waste</option>
-                                <option value="waste water">waste water</option>
-                             </select>   
-                    </tr>   
-                    <!-- <tr>
-                        <td>Upload relevant videos / pictures:</td> 
-                        <td><input type="file" accept="image/*" name="myfile" id="file"  style="margin: 10px; padding: 10px; width: 370px;" required>
-                          
-                        </td>
-                        <img src="" alt="">
-                        <script>
-                            let url = "Api_Endpoint_Url";
-                            let file = document.querySelector("input");
-                            let img = document.querySelector("img");
-                            file.addEventListener('change',()=>{
-                                let fr = new FileReader();
-                                fr.addEventListener('loadend',()=>{
-                                    let res = fr.result;
-                                    img.src=res;
-                                    let spt = res.split("base64,")[1];
-                                    // console.log(spt);
-                                    let obj = {
-                                        base64:spt,
-                                        type:file.files[0].type,
-                                        name:file.files[0].name
-                                    }
-                                    fetch(url,{
-                                        method:"POST",
-                                        body:JSON.stringify(obj)
-                                    })
-                                    .then(r=>r.text())
-                                    .then(data=>console.log(data))
-                         
-                                })
-                                fr.readAsDataURL(file.files[0])
-                            })
-                        </script>
-                    </tr> 
-                     -->
-                   <tr>
-                    <td>Upload relevant videos / pictures:</td>
-                    <td> <input type="file"accept="image/*" style="margin: 10px; padding: 10px; width: 370px;" required></td>
-                   </tr>
-<img src="" alt="">
-
-                            
-                    
-                </table>
-                    <input type="submit" id="btn" >
-                </form>
-
-                <script>
-                  const scriptURL = "https://script.google.com/macros/s/AKfycbzxWkzLyc9SOyyBh2--VOW0NvdlVbC4Wdi6qIrlHSJsOwxj_ZQu9osfc-aEwc0dmL30/exec" //paste your url of web app created in App Script
-                  const form = document.forms['submit-to-google-sheet']
-                
-                  form.addEventListener('submit', e => {
-                    e.preventDefault()
-                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                      .then(response => console.log('Success!', response))
-                      .catch(error => console.error('Error!', error.message))
-                  })
-
-                </script>
-                <script>
-                    let url = "https://script.google.com/macros/s/AKfycbwHaLVSWwHlIhAtsYKKbcZW4L3YDC0GoMamUTCmodvPgDGnb44Rpd7TH3y_ca0u0numuA/exec";
-                    let file = document.querySelector("input");
-                    let img = document.querySelector("img");
-                    file.addEventListener('change',()=>{
-                        let fr = new FileReader();
-                        fr.addEventListener('loadend',()=>{
-                            let res = fr.result;
-                            img.src=res;
-                            let spt = res.split("base64,")[1];
-                            // console.log(spt);
-                            let obj = {
-                                base64:spt,
-                                type:file.files[0].type,
-                                name:file.files[0].name
-                            }
-                            fetch(url,{
-                                method:"POST",
-                                body:JSON.stringify(obj)
-                            })
-                            .then(r=>r.text())
-                            .then(data=>console.log(data))
-                 
-                        })
-                        // fr.readAsDataURL(file.files[0])
-                    })
-                </script>
-
-                
-
-        </center>
+            <tr>
+                    <td>Sector of the problem: </td> 
+                    <td><select name="sector" id="sector" placeholder="Select option" style="margin: 10px; padding: 10px; width: 370px;" required>
+                        <option value="Select option">Select option</option>
+                        <option value="Health and nutrition">Health and nutrition</option>
+                        <option value="Livelihood">Livelihood</option>
+                        <option value="Water">Water</option>
+                        <option value="Energy">Energy</option>
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="Education">Education</option>
+                        <option value="Social">Social</option>
+                        <option value="solid waste">solid waste</option>
+                        <option value="waste water">waste water</option>
+                     </select>   
+            </tr>   
+            <tr>
+                <td>Upload relevant videos / pictures:</td> 
+                <td><input type="file" name="myfile" id="file"  style="margin: 10px; padding: 10px; width: 370px;" required></td>
+                </tr>  
+            </table>   
+                <center><button >
+                    Submit</button></center>
+   
+      </div>
     </div>
-        </div>
+
+    <!-- Thankyou_message --><br>
+    <div class="thankyou_message" style="display:none;background:none;border:2px solid black;border-radius:
+     40px;width: 1000px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br><br>
+      <h1>Thanks for contacting us!</h1>
+      <p>Your details been successfully submitted. Thanks!</p>
+    </div>
+  </form>
+
+  <script>
+    // To change the URL or API for own form
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzxWkzLyc9SOyyBh2--VOW0NvdlVbC4Wdi6qIrlHSJsOwxj_ZQu9osfc-aEwc0dmL30/exec" //paste your url of web app created in App Script
+    // To use the name in opening form tag
+    const form = document.forms['submit-to-google-sheet'] //use this name as the "name in opening form tag of html"
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+
+  </script>
+
+
+
+  <script data-cfasync="false" type="text/javascript">
     
-    
+   (function() {
+  function validEmail(email) {
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return re.test(email);
+  }
+
+  function validateHuman(honeypot) {
+    if (honeypot) {
+      console.log("Robot Detected!");
+      return true;
+    } else {
+      console.log("Welcome Human!");
+    }
+  }
+  function getFormData(form) {
+    var elements = form.elements;
+
+    var fields = Object.keys(elements).filter(function(k) {
+          return (elements[k].name !== "honeypot");
+    }).map(function(k) {
+      if(elements[k].name !== undefined) {
+        return elements[k].name;
+      }else if(elements[k].length > 0){
+        return elements[k].item(0).name;
+      }
+    }).filter(function(item, pos, self) {
+      return self.indexOf(item) == pos && item;
+    });
+
+    var formData = {};
+    fields.forEach(function(name){
+      var element = elements[name];
+      formData[name] = element.value;
+      if (element.length) {
+        var data = [];
+        for (var i = 0; i < element.length; i++) {
+          var item = element.item(i);
+          if (item.checked || item.selected) {
+            data.push(item.value);
+          }
+        }
+        formData[name] = data.join(', ');
+      }
+    });
+
+    // add form-specific values into the data
+    formData.formDataNameOrder = JSON.stringify(fields);
+    formData.formGoogleSheetName = form.dataset.sheet || "sheetname"; // default sheet name
+    formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+    console.log(formData);
+    return formData;
+  }
+
+  function handleFormSubmit(event) {  
+    event.preventDefault();           
+    var form = event.target;
+    var data = getFormData(form);         
+    if( data.email && !validEmail(data.email) ) {   
+      var invalidEmail = form.querySelector(".email-invalid");
+      if (invalidEmail) {
+        invalidEmail.style.display = "block";
+        return false;
+      }
+    } else {
+      disableAllButtons(form);
+      var url = form.action;
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', url);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.onreadystatechange = function() {
+          console.log(xhr.status, xhr.statusText);
+          console.log(xhr.responseText);
+          var formElements = form.querySelector(".form-elements")
+          if (formElements) {
+            formElements.style.display = "none"; // hide form
+          }
+          var thankYouMessage = form.querySelector(".thankyou_message");
+          if (thankYouMessage) {
+            thankYouMessage.style.display = "block";
+          }
+          return;
+      };
+      var encoded = Object.keys(data).map(function(k) {
+          return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+      }).join('&');
+      xhr.send(encoded);
+    }
+  }
+  
+  function loaded() {
+    console.log("Contact form submission handler loaded successfully.");
+    var forms = document.querySelectorAll("form.gform");
+    for (var i = 0; i < forms.length; i++) {
+      forms[i].addEventListener("submit", handleFormSubmit, false);
+    }
+  };
+  document.addEventListener("DOMContentLoaded", loaded, false);
+
+  function disableAllButtons(form) {
+    var buttons = form.querySelectorAll("button");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].disabled = true;
+    }
+  }
+})();
+
+
+  </script>
+</center>
 </body>
+
 </html>
+
+
+
